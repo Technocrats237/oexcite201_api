@@ -27,7 +27,7 @@ server.listen(process.env.PORT || 8000, () => {
 app.use('/api/v1/users', auth, userRoutes);
 app.use('/api/v1/auth', authRoutes);
 
-app.get('/', auth, (req, res) => {
+app.get('/web_api/', (req, res) => {
     res.send(`<h1>Welcome, ${process.env.APP_NAME}!</h1>`);
 });
 

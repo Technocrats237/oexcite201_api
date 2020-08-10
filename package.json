@@ -13,5 +13,8 @@
         "sequelize": "^6.3.0",
         "showdown": "^1.9.1",
         "socket.io": "^2.3.0"
+    },
+    "devDependencies": {
+        "sequelize-cli": "^6.2.0"
     }
 }
