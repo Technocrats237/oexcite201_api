@@ -2,7 +2,7 @@ module.exports = {
     development: {
         "username": "root",
         "password": null,
-        "database": "smarta",
+        "database": "technocrat_oexcite201",
         "host": "127.0.0.1",
         "dialect": "mysql"
       },
