@@ -24,10 +24,10 @@ server.listen(process.env.PORT || 8000, () => {
     console.log(`[ server.js ] Listening on port ${server.address().port}`);
 });
 
-app.use('/web_api/api/v1/users', auth, userRoutes);
-app.use('/web_api/api/v1/auth', authRoutes);
+app.use('/api/v1/users', auth, userRoutes);
+app.use('/api/v1/auth', authRoutes);
 
-app.get('/web_api/', (req, res) => {
+app.get('/', (req, res) => {
     res.send(`<h1>Welcome, ${process.env.APP_NAME}!</h1>`);
 });
 
